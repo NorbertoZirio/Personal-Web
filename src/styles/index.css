@@ -1,3 +1,25 @@
+@font-face {
+  font-family: 'Titulos';
+  src: url(../fonts/Orbitron/Orbitron-VariableFont_wght.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Texto';
+  src: url(../fonts/Rajdhani/Rajdhani-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Branding';
+  src: url(../fonts/Audiowide/Audiowide-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -5,12 +27,16 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background: linear-gradient(to bottom, #000000 0%, #11102c 80%, #00008B 100%);
+  background-image: url(../images/pngwing.com.png);
+  
+  
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x:hidden;
 }
 
 
@@ -19,14 +45,13 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
-}
-
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
+  min-height: 300vh;
+  display: flex;
+  flex-direction: column;
   
 }
+
+
+
+
+

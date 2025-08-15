@@ -1,0 +1,36 @@
+.sidebar{
+    background-color: #170F2D;
+    border: #ffffff solid 1px;
+    
+    width: 8vw;
+    min-width: 100px;
+    height: 50vh;
+    
+    position: fixed;
+    transition: transform 0.3s;
+    top: 50vh;
+    transform: translateY(-50%) translateX(-55%);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px #170F2D;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 10px;
+    justify-content: space-around;
+    
+  }
+  .sidebar:hover{
+   transform: translateY(-53%) translateX(-55%);
+  }
+  
+  svg{
+    width: 40%;
+    aspect-ratio: auto;
+    fill: white;
+    transition: transform 0.2s;
+  }
+  
+  svg:hover{
+    transform: scale(1.1);
+  }

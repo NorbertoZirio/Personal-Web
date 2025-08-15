@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Titulos";
+  src: url(../fonts/Orbitron/Orbitron-VariableFont_wght.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Texto";
+  src: url(../fonts/Rajdhani/Rajdhani-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Branding";
+  src: url(../fonts/Audiowide/Audiowide-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+li {
+  font-weight: 800;
+  font-family: "Branding";
+  cursor: pointer;
+  font-size: medium;
+}
+
+@media (max-width: 768px) {
+  li{
+    font-size: small;
+  }
+}
