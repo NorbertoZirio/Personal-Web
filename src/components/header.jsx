@@ -1,14 +1,8 @@
-import { useEffect, useState } from "react";
-import '../styles/header.css'
+import "../styles/header.css";
+import useHandleResize from "./widthDetector";
 
 export default function Header() {
-  const [isMovile, setIsMovile] = useState(window.innerWidth < 768);
-
-  useEffect(() => {
-    const resize = () => setIsMovile(window.innerWidth < 768);
-    window.addEventListener("resize", resize);
-    return () => window.removeEventListener("resize", resize);
-  }, []);
+  const isMovile = useHandleResize();
 
   const styles = {
     container: {
@@ -24,7 +18,7 @@ export default function Header() {
       marginLeft: isMovile ? "5px" : "10px",
       alignItems: "center",
       gap: isMovile ? "5px" : "10px",
-      height: "100%"
+      height: "100%",
     },
     name: {
       fontFamily: "Branding",
@@ -52,7 +46,7 @@ export default function Header() {
             borderRadius: "1000px",
             height: "80%",
             aspectRatio: "1/1",
-            objectFit: "cover"
+            objectFit: "cover",
           }}
           src="/acount-image.jpeg"
           alt="icono"

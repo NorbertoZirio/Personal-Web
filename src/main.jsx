@@ -9,5 +9,6 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Header></Header>
     <Sidebar></Sidebar>
+    <App></App>
   </StrictMode>
 );
