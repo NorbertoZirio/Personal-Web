@@ -24,6 +24,8 @@ li {
   font-family: "Branding";
   cursor: pointer;
   font-size: medium;
+  height: 100%;
+  align-content: center;
 }
 
 @media (max-width: 768px) {

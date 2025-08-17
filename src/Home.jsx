@@ -1,4 +1,5 @@
 import useHandleResize from "./components/widthDetector";
+import Carrusel from "./components/carrusel";
 
 export default function Home() {
   const isMovile = useHandleResize();
@@ -12,11 +13,11 @@ export default function Home() {
     text: {
       width: isMovile ? "100%" : "50%",
       height: isMovile
-        ? `${window.innerHeight - 120 - 0.6}px`
+        ? `${(window.innerHeight - 120) * 0.4}px`
         : `${window.innerHeight - 120}px`,
       display: "flex",
       flexDirection: "column",
-      justifyContent: "start",
+      justifyContent: "space-between",
       textAlign: "left",
     },
   };
@@ -35,8 +36,10 @@ export default function Home() {
         </h1>
         <p
           style={{
-                      marginTop: "5%",
-              lineHeight: "1.9"
+            marginTop: "5%",
+            lineHeight: "1.9",
+            fontFamily: "Texto",
+            fontWeight: "900",
           }}
         >
           Some description Lorem ipsum dolor sit amet consectetur adipisicing
@@ -48,7 +51,8 @@ export default function Home() {
           style={{
             display: "flex",
             justifyContent: "space-between",
-            marginTop: "10%",
+            //marginTop: "auto",
+            marginBottom: "10%",
             alignItems: "center",
           }}
         >
@@ -69,7 +73,7 @@ export default function Home() {
           <h3>What are you wating for?!</h3>
         </div>
       </div>
-      <div>Carrusel</div>
+      <Carrusel></Carrusel>
     </div>
   );
 }

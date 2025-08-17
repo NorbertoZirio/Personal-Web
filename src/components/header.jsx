@@ -12,6 +12,7 @@ export default function Header() {
       alignItems: "center",
       position: "fixed",
       cursor: "pointer",
+      zIndex: "10",
     },
     logoSection: {
       display: "flex",

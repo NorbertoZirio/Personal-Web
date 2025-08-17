@@ -1,6 +1,7 @@
 import "./styles/App.css";
 import useHandleResize from "./components/widthDetector";
 import Home from "./Home";
+import Projects from "./Projects";
 
 function App() {
   const styles = {
@@ -17,6 +18,7 @@ function App() {
   return (
     <main style={styles.main}>
       <Home></Home>
+      <Projects></Projects>
     </main>
   );
 }

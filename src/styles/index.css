@@ -7,8 +7,8 @@
 
 @font-face {
   font-family: 'Texto';
-  src: url(../fonts/Rajdhani/Rajdhani-Regular.ttf) format('truetype');
-  font-weight: normal;
+  src: url(../fonts/Rajdhani/Rajdhani-Bold.ttf) format('truetype');
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -49,6 +49,13 @@ body {
   display: flex;
   flex-direction: column;
   
+}
+
+button{
+  transition: transform 0.2s;
+}
+button:hover{
+  transform: translateY(-10%);
 }
 
 
