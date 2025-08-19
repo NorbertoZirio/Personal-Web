@@ -25,7 +25,7 @@
   }
   
   svg{
-    width: 40%;
+    width: 100%;
     aspect-ratio: auto;
     fill: white;
     transition: transform 0.2s;
@@ -33,4 +33,9 @@
   
   svg:hover{
     transform: scale(1.1);
+  }
+
+  a{
+    width: 40%;
+    aspect-ratio: auto;
   }

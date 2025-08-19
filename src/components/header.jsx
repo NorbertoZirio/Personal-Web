@@ -55,26 +55,48 @@ export default function Header() {
         <h2 style={styles.name}>Name</h2>
       </div>
       <ul style={styles.list}>
-        <li>Home</li>
-        <li>Proyect</li>
-        <li>Tech</li>
-        <li>Contact</li>
+        <li>
+          <a id="menu" href="#Home">
+            Home
+          </a>
+        </li>
+        <li>
+          <a id="menu" href="#Proyect">
+            Proyect
+          </a>
+        </li>
+        <li>
+          <a id="menu" href="#Tech">
+            Tech
+          </a>
+        </li>
+        <li>
+          <a id="menu" href="#Contact">
+            Contact
+          </a>
+        </li>
       </ul>
-      <button
+      <a
+        href="/Norberto-Resume.pdf" // Asegúrate de que el archivo esté en la carpeta public
+        download="Norberto-Resume.pdf"
         style={{
           marginRight: "10px",
-          height: "50%",
-          aspectRatio: "3/1",
+          height: "40px",
+          width: "150px",
           borderRadius: "10px",
           fontWeight: "800",
           backgroundColor: "transparent",
           color: "white",
           border: "solid white 2px",
           fontFamily: "Branding",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          textDecoration: "none",
         }}
       >
         Resume
-      </button>
+      </a>
     </div>
   );
 }

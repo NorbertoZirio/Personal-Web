@@ -23,7 +23,7 @@ export default function Home() {
   };
 
   return (
-    <div style={styles.hero}>
+    <div id="Home" style={styles.hero}>
       <div style={styles.text}>
         <h1
           style={{
@@ -51,7 +51,6 @@ export default function Home() {
           style={{
             display: "flex",
             justifyContent: "space-between",
-            //marginTop: "auto",
             marginBottom: "10%",
             alignItems: "center",
           }}

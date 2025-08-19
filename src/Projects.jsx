@@ -28,11 +28,11 @@ export default function Projects() {
 
   return (
     <div
+      id="Proyect"
       style={{
         marginTop: "120px",
         height: `${window.innerHeight - 120}px`,
         width: "100%",
-        //backgroundColor: "white",
         color: "black",
         display: "flex",
         flexDirection: "column",
@@ -69,6 +69,7 @@ export default function Projects() {
         ></Card>
       </div>
       <div
+        id="Tech"
         style={{
           width: "100%",
           height: "25%",
