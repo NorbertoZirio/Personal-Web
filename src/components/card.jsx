@@ -1,6 +1,10 @@
 import "../styles/card.css";
 
-export default function Card({ url, title = "Title", info = "Info" }) {
+export default function Card({ url, title = "Title", info = "Info", dir }) {
+  const handleClick = () => {
+    window.location.href = dir;
+  };
+
   return (
     <div
       className="card"
@@ -16,6 +20,7 @@ export default function Card({ url, title = "Title", info = "Info" }) {
         display: "flex",
         transition: "transform 0.2s",
       }}
+      onClick={handleClick}
     >
       <div
         style={{

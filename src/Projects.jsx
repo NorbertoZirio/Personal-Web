@@ -6,24 +6,28 @@ export default function Projects() {
     url: "/Screenshot_2025-08-16_14-13-23.png",
     title: "EComerce",
     info: "This is an EComerce named TIMBIRICHE...",
+    dir: "https://timbiriche.pages.dev",
   };
 
   const wheaterApp = {
     url: "/Screenshot_2025-08-16_14-15-08.png",
     title: "Wheater App",
     info: "A Wheater App services whit Graphics...",
+    dir: "https://norbertozirio.github.io/weather-app",
   };
 
   const pokemonGame = {
     url: "/Screenshot_2025-08-16_14-17-18.png",
     title: "Pokemon Memory Game",
     info: "A memory game whit pokemons :)...",
+    dir: "https://pokemon-memory-game-al6.pages.dev",
   };
 
   const tictactoe = {
     url: "/Screenshot_2025-08-16_14-21-45.png",
     title: "TIC-TAC-TOE",
     info: "A funy game whit all the logic...",
+    dir: "https://norbertozirio.github.io/TIC-TAC-TOE/",
   };
 
   return (
@@ -51,21 +55,25 @@ export default function Projects() {
           url={timbiriche.url}
           title={timbiriche.title}
           info={timbiriche.info}
+          dir={timbiriche.dir}
         ></Card>
         <Card
           url={wheaterApp.url}
           title={wheaterApp.title}
           info={wheaterApp.info}
+          dir={wheaterApp.dir}
         ></Card>
         <Card
           url={pokemonGame.url}
           title={pokemonGame.title}
           info={pokemonGame.info}
+          dir={pokemonGame.dir}
         ></Card>
         <Card
           url={tictactoe.url}
           title={tictactoe.title}
           info={tictactoe.info}
+          dir={tictactoe.dir}
         ></Card>
       </div>
       <div
