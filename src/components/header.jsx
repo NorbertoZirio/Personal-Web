@@ -23,7 +23,8 @@ export default function Header() {
     },
     name: {
       fontFamily: "Branding",
-      fontSize: isMovile ? "25px" : "30px",
+      fontSize: isMovile ? "20px" : "25px",
+      textWrap: "wrap",
     },
     list: {
       display: "flex",
@@ -52,7 +53,7 @@ export default function Header() {
           src="/acount-image.jpeg"
           alt="icono"
         />
-        <h2 style={styles.name}>Name</h2>
+        <h2 style={styles.name}>Norberto Zirio</h2>
       </div>
       <ul style={styles.list}>
         <li>

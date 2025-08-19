@@ -1,6 +1,25 @@
 import "./styles/contact.css";
 
 export default function Contact() {
+  /*const handleSend = (e) => {
+    e.preventDefault();
+
+    const name = document.querySelector("#Name");
+    const contact = document.querySelector("#contact");
+    const mesage = document.querySelector("#comentario");
+
+    const buildMessage = () => {
+      return `Name: ${name.value}
+              Contact: ${contact.value}
+              Message: ${mesage.value}`;
+    };
+    console.log(buildMessage());
+    const text = encodeURIComponent(buildMessage());
+    console.log(text);
+
+    window.open(`https://web.telegram.org/k/#@ZerefNZR`, "_blank");
+  };*/
+
   return (
     <div
       id="Contact"
@@ -13,6 +32,8 @@ export default function Contact() {
       }}
     >
       <form
+        action="https://formsubmit.co/norbertozirio@gmail.com"
+        method="POST"
         style={{
           display: "flex",
           flexDirection: "column",
@@ -20,14 +41,14 @@ export default function Contact() {
           color: "white",
           alignItems: "center",
         }}
-        action=""
       >
         <h2>Wanna write me a message?</h2>
         <label htmlFor="Name">Name</label>
-        <input id="Name" type="text" placeholder="Jon" />
+        <input id="Name" name="Name" type="text" placeholder="Jon" />
         <label htmlFor="contact">Your Contacts</label>
         <input
           id="contact"
+          name="contact"
           type="text"
           placeholder="eample@email.com, +01 xxx xxx, ..."
         />
@@ -44,6 +65,8 @@ export default function Contact() {
           id="comentario"
           placeholder="Your coment or mesage..."
         ></textarea>
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="#Home" />
         <button
           style={{
             marginTop: "10%",
@@ -56,6 +79,7 @@ export default function Contact() {
             backgroundColor: "#170F2D",
             border: "solid white 2px",
           }}
+          type="submit"
         >
           Send
         </button>

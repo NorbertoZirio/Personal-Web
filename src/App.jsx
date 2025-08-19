@@ -7,7 +7,7 @@ import Contact from "./contact";
 function App() {
   const styles = {
     main: {
-      border: "solid white 2px",
+      //border: "solid white 2px",
       position: "absolute",
       top: "120px",
       left: useHandleResize ? "15%" : "10%",

@@ -22,6 +22,16 @@ export default function Home() {
     },
   };
 
+  function contactMe() {
+    const input = document.getElementById("Name");
+    if (!input) {
+      return console.log("No encontrado");
+    }
+
+    input.scrollIntoView({ behavior: "smooth", block: "center" });
+    input.focus();
+  }
+
   return (
     <div id="Home" style={styles.hero}>
       <div style={styles.text}>
@@ -32,7 +42,7 @@ export default function Home() {
             margin: "0",
           }}
         >
-          Hero title
+          Front-end Developer
         </h1>
         <p
           style={{
@@ -42,10 +52,13 @@ export default function Home() {
             fontWeight: "900",
           }}
         >
-          Some description Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Laborum earum cupiditate vero omnis, rerum inventore optio,
-          libero non modi suscipit perferendis totam labore commodi vitae.
-          Blanditiis culpa modi sint in.
+          I am a passionate front-end developer specialized in building
+          intuitive and engaging user experiences. I focus on React to create
+          dynamic, scalable interfaces, making the most of its components and
+          ecosystem. My proficiency in HTML5, CSS3, and modern JavaScript allows
+          me to bring polished, responsive designs to life. I enjoy
+          collaborating with multidisciplinary teams to transform ideas into
+          high-quality digital products.
         </p>
         <div
           style={{
@@ -66,8 +79,9 @@ export default function Home() {
               backgroundColor: "#170F2D",
               border: "solid white 2px",
             }}
+            onClick={contactMe}
           >
-            Call to action
+            Contact Me!!
           </button>
           <h3>What are you wating for?!</h3>
         </div>
